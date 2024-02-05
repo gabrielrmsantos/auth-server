@@ -1,0 +1,30 @@
+{
+  "name": "auth-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest /test",
+    "start": "ts-node-dev src/index.ts --env-file=.env",
+    "dev": "ts-node-dev src/index.ts --env-file=.env --watch"
+  },
+  "keywords": [],
+  "author": "Gabriel Roberto",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.16",
+    "@types/swagger-ui-express": "^4.1.6",
+    "jest": "^29.7.0",
+    "swagger-ui-express": "^5.0.0",
+    "ts-jest": "^29.1.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "mysql2": "^3.9.1"
+  }
+}
