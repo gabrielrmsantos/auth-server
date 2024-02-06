@@ -1,7 +1,7 @@
-import { Email } from "./Email";
 import { Entity } from "./Entity";
-import { Identifier } from "./Identifier";
-import { Password } from "./Password";
+import { Email } from "@domain/Email";
+import { Password } from "@domain/Password";
+import { Identifier } from "@domain/Identifier";
 
 export type UserProps = {
   username: string;
@@ -17,5 +17,9 @@ export class UserEntity extends Entity<UserProps> {
 
   static hydrate(props: UserProps, id: Identifier) {
     return new UserEntity(props, id);
+  }
+
+  get email () {
+    return this.props.email;
   }
 }

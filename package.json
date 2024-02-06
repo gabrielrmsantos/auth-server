@@ -12,6 +12,7 @@
   "author": "Gabriel Roberto",
   "license": "ISC",
   "devDependencies": {
+    "@faker-js/faker": "^8.4.0",
     "@types/express": "^4.17.21",
     "@types/jest": "^29.5.12",
     "@types/node": "^20.11.16",
@@ -25,6 +26,7 @@
   "dependencies": {
     "dotenv": "^16.4.1",
     "express": "^4.18.2",
-    "mysql2": "^3.9.1"
+    "mysql2": "^3.9.1",
+    "ulid": "^2.3.0"
   }
 }

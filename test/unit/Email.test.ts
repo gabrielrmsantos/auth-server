@@ -1,4 +1,4 @@
-import { Email } from "../../src/domain/Email";
+import { Email } from "@domain/Email";
 
 describe("Email", () => {
 

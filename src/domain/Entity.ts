@@ -1,9 +1,9 @@
-import { Identifier } from "./Identifier";
+import { Identifier } from "./valueobject/Identifier";
 
 export class Entity<Props> {
 
-  private id: Identifier;
-  private props: Props;
+  readonly id: Identifier;
+  protected props: Props;
 
   protected constructor (props: Props, id?: Identifier) {
     this.props = props;

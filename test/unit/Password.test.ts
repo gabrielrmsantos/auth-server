@@ -1,4 +1,4 @@
-import { Password } from "../../src/domain/Password";
+import { Password } from "@domain/Password";
 
 describe("Password", () => {
 
